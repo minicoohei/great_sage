@@ -1,0 +1,52 @@
+# Great Sage System Configuration
+
+audio:
+  sample_rate: 16000
+  chunk_size: 1024
+  channels: 1
+  format: int16
+  silence_threshold: 500
+  silence_duration: 0.5
+
+speech_recognition:
+  model: "whisper-1"
+  language: "ja"
+  temperature: 0.2
+  max_segment_length: 30
+
+analysis:
+  keyword_alerts:
+    - "問題"
+    - "課題"
+    - "リスク"
+    - "重要"
+    - "決定"
+  contradiction_threshold: 0.85
+  fact_check_enabled: true
+
+speaker_diarization:
+  enabled: false  # Phase 2
+  min_speakers: 2
+  max_speakers: 10
+
+notifications:
+  slack:
+    enabled: false
+    importance_threshold: 0.7
+  voice:
+    enabled: true
+    voice_id: "japanese"
+    rate: 150
+  desktop:
+    enabled: true
+
+database:
+  path: "data/great_sage.db"
+  backup_interval: 3600  # seconds
+
+logging:
+  level: "INFO"
+  file: "logs/great_sage.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+EOF < /dev/null

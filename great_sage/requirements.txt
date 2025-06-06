@@ -1,0 +1,39 @@
+# Core audio processing
+pyaudio==0.2.13
+sounddevice==0.4.6
+numpy==1.24.3
+
+# Speech recognition
+openai==1.12.0
+SpeechRecognition==3.10.0
+
+# Text analysis
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+spacy==3.7.2
+
+# Speaker diarization (Phase 2)
+# pyannote.audio==3.0.1
+# torch==2.0.1
+# torchaudio==2.0.2
+
+# Notifications
+slack-sdk==3.23.0
+pyttsx3==2.90
+plyer==2.1
+
+# Data management
+pandas==2.0.3
+sqlalchemy==2.0.19
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+tqdm==4.66.1
+
+# Development tools
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
+EOF < /dev/null

@@ -1,0 +1,37 @@
+# 大賢者システム 必要ライブラリ
+
+# 音声処理
+pyaudio==0.2.13
+sounddevice==0.4.6
+numpy==1.24.3
+
+# 音声認識
+openai==1.12.0
+
+# 話者識別（Phase 2以降）
+# pyannote.audio==3.1.1
+# torch==2.1.0
+# torchaudio==2.1.0
+
+# テキスト解析
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+
+# 通知システム
+slack-sdk==3.26.2
+pyttsx3==2.90
+plyer==2.1
+
+# データ管理
+pandas==2.0.3
+sqlalchemy==2.0.23
+
+# ユーティリティ
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+
+# 開発用
+pytest==7.4.3
+black==23.12.1
+flake8==6.1.0
